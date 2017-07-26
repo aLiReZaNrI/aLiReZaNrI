@@ -13,8 +13,9 @@ JSON = (loadfile "./libs/dkjson.lua")()
 local lgi = require ('lgi')
 local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
+--run_bash("~/BDReborn/clearcache.sh")
 chats = {}
-helper_id = 418516842 --Put Your Helper Bot ID Here
+
 
 function do_notify (user, msg)
 	local n = notify.Notification.new(user, msg)
@@ -92,28 +93,21 @@ function create_config( )
     "Tools",
     "Write"
 	},
-    sudo_users = {377450049,418516842,284298227},
+    sudo_users = {364464502},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[
-	》MaTaDoR BoT v5.7
-An advanced administration bot based on https://valtman.name/telegram-cli
+    info_text = [[⚜ *MaTaDoR BoT v5.4*
 
-》https://github.com/BeyondTeam/BDReborn 
+🌐 https://github.com/MrMahDiRoO/MaTaDoR
 
-》Admins :
-》@MahDiRoO ➣ Founder & Developer《
-》@JavadSudo ➣ Developer《
-》@Shaniloop ➣ Developer《
+🔖 *Admins :*
+》@MahDiRoO ➣ _Founder & Developer《_
 
-》Special thanks to :
-》MaTaDoRTeaM
-》@Xamarin_Devloper
+》@ToOfan《
 
-》Our channel :
-》@MaTaDoRTeam《
-]],
+📜 *Our channel :*
+》@MaTaDoRTeaM《]],
   }
 	serialize_to_file(config, './data/config.lua')
 	print ('saved config into conf.lua')
