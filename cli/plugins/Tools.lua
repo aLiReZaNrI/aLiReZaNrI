@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 377450049 -- put Your ID here! <===
+local SUDO = 364464502 -- put Your ID here! <===
 function exi_files(cpath)
     local files = {}
     local pth = cpath
@@ -1093,12 +1093,12 @@ matches[3] then
 		local send_file = 
 "./"..matches[2].."/"..matches[3]
 		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 
-1, nil, send_file, '@MahDiRoO', dl_cb, nil)
+1, nil, send_file, '@aLiReZaNoROi', dl_cb, nil)
 	end
 	if matches[1]:lower() == "sendplug" and matches[2] or matches[1]:lower() == "Sendplug" and matches[2] then
 	    local plug = "./plugins/"..matches[2]..".lua"
 		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 
-1, nil, plug, '@MahDiRoO', dl_cb, nil)
+1, nil, plug, '@aLiReZaNoROi', dl_cb, nil)
     end
   end
 
@@ -1276,4 +1276,4 @@ patterns = {
 }, 
 run = run, pre_process = pre_process
 }
--- #End By @MahDiRoO
+-- #End By @aLiReZaNoROi
